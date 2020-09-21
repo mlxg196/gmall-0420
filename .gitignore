@@ -1,7 +1,8 @@
 .idea/
-*.iml
-mvnw*
+target/
 .mvn/
+mvnw*
+
 # Compiled class file
 *.class
 
@@ -25,35 +26,3 @@ mvnw*
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-gmall-common/src/main/resources/
-gmall-common/src/test/
-gmall-oms/.gitignore
-gmall-oms/.mvn/
-gmall-oms/mvnw
-gmall-oms/mvnw.cmd
-gmall-oms/pom.xml
-gmall-oms/src/
-gmall-pms/.gitignore
-gmall-pms/.mvn/
-gmall-pms/mvnw
-gmall-pms/mvnw.cmd
-gmall-pms/pom.xml
-gmall-pms/src/
-gmall-sms/.gitignore
-gmall-sms/.mvn/
-gmall-sms/mvnw
-gmall-sms/mvnw.cmd
-gmall-sms/pom.xml
-gmall-sms/src/
-gmall-ums/.gitignore
-gmall-ums/.mvn/
-gmall-ums/mvnw
-gmall-ums/mvnw.cmd
-gmall-ums/pom.xml
-gmall-ums/src/
-gmall-wms/.gitignore
-gmall-wms/.mvn/
-gmall-wms/mvnw
-gmall-wms/mvnw.cmd
-gmall-wms/pom.xml
-gmall-wms/src/
