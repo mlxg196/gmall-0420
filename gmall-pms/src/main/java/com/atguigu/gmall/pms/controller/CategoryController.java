@@ -2,6 +2,7 @@ package com.atguigu.gmall.pms.controller;
 
 import java.util.List;
 
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +34,15 @@ public class CategoryController {
 
     @Autowired
     private CategoryService categoryService;
-
+    /**
+     * 三级查询
+     */
+    @ApiOperation("根据id查询父类")
+    @GetMapping("parent/{parentId}")
+    public ResponseVo<List<CategoryEntity>> queryCategory(@PathVariable("parentId")long parentId){
+        List<CategoryEntity> categoryEntityList = this.categoryService.queryCategory(parentId);
+        return ResponseVo.ok(categoryEntityList);
+    }
     /**
      * 列表
      */
